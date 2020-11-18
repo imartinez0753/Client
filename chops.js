@@ -45,3 +45,13 @@ var nums = [1,2,3,4]
 
 //TODO For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies.
 
+
+var candies = [2,3,5,1,3], extraCandies = 3;
+
+for (var i = 0; i < candies.length; i++) {
+    if (candies[i] + extraCandies >= 5) {
+        console.log([i] + true);
+    } else {
+        console.log([i] + false);
+    }
+}
