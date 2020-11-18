@@ -36,6 +36,12 @@ var nums = [1,2,3,4]
 // }
 
 
-const cumulativeSum = (sum => value => sum += value)(0);
+// const cumulativeSum = (sum => value => sum += value)(0);
 
-console.log(nums.map(cumulativeSum));
+// console.log(nums.map(cumulativeSum));
+
+
+//TODO Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the ith kid has.
+
+//TODO For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies.
+
