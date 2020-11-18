@@ -18,10 +18,12 @@
 
 // Return the running sum of nums.
 
-var nums = [1,2,3,4,5]
+var nums = [1,2,3,4]
 
 // runningSum[i] = sum(nums[0]…nums[i])
 
 for (var i = 0; i < nums.length; i++) {
-    console.log(nums[i] + nums[i])
+    var first = nums[i] + nums[i + 1];
+    // console.log(nums[i] + nums[i + 1]);
+    console.log(first);
 }
