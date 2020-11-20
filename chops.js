@@ -41,17 +41,22 @@ var nums = [1,2,3,4]
 // console.log(nums.map(cumulativeSum));
 
 
-//TODO Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the ith kid has.
+// Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the ith kid has.
 
-//TODO For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies.
+// For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies.
 
 
-var candies = [2,3,5,1,3], extraCandies = 3;
+// var candies = [2,3,5,1,3], extraCandies = 3;
 
-for (var i = 0; i < candies.length; i++) {
-    if (candies[i] + extraCandies >= 5) {
-        console.log([i] + true);
-    } else {
-        console.log([i] + false);
-    }
-}
+// for (var i = 0; i < candies.length; i++) {
+//     if (candies[i] + extraCandies >= 5) {
+//         console.log([i] + true);
+//     } else {
+//         console.log([i] + false);
+//     }
+// }
+
+//TODO Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
+
+//TODO Return the array in the form [x1,y1,x2,y2,...,xn,yn].
+
