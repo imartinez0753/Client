@@ -69,3 +69,8 @@ var nums = [1,2,3,4]
 word1 = ['ab', 'c']
 word2 = ['a', 'bc']
 
+console.log(word1.join(''))
+
+if (word1.join('') === word2.join('') ) {
+    console.log('true')
+} 
