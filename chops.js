@@ -56,7 +56,16 @@ var nums = [1,2,3,4]
 //     }
 // }
 
-//TODO Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
+// Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
 
-//TODO Return the array in the form [x1,y1,x2,y2,...,xn,yn].
+// Return the array in the form [x1,y1,x2,y2,...,xn,yn].
+
+//===============================================================================================
+
+// Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+
+// A string is represented by an array if the array elements concatenated in order forms the string.
+
+word1 = ['ab', 'c']
+word2 = ['a', 'bc']
 
