@@ -66,11 +66,69 @@ var nums = [1,2,3,4]
 
 // A string is represented by an array if the array elements concatenated in order forms the string.
 
-word1 = ['ab', 'c']
-word2 = ['a', 'bc']
+// word1 = ['ab', 'c']
+// word2 = ['a', 'bc']
 
-console.log(word1.join(''))
+// console.log(word1.join(''))
 
-if (word1.join('') === word2.join('') ) {
-    console.log('true')
-} 
+// if (word1.join('') === word2.join('') ) {
+//     console.log('true')
+// } 
+
+// Given an array of integers nums.
+
+// A pair (i,j) is called good if nums[i] == nums[j] and i < j.
+
+// Return the number of good pairs.
+
+
+// var nums = [1,2,3,1,1,3];
+
+// var result = false;
+
+// for (var i = 0; i < nums.length; i++) {
+//     for (var j = 0; j < nums.length; j++) {
+//         if ( i !== j) {
+//             if (nums[i] === nums[j]) {
+//                 result = true
+//                 break;
+//             }            
+//         }
+//     }
+//     if (result) {
+//         break;
+//     }
+//     console.log(result)
+// }
+
+
+checkDuplicate();
+   function checkDuplicate(element, index) {
+      let arr = ["abc","xy","bb", "abc"];
+      for(let i = 0; i < arr.length;i++) {
+         // nested loop
+         for(let j = 0; j < arr.length;j++) {
+            // do not compare same elements
+            if(i !== j) {
+              // check if elements match
+        if(arr[i] === arr[j]){
+                 // duplicate element found
+           result = true;
+                 // terminate inner loop
+           break;
+        }
+            }
+         }
+         // terminate outer loop
+         if(result){
+            break;
+         }
+      }
+      if(result) {
+         console.log('Array contains duplicate elements');
+      } else {
+         console.log('Array does not contain duplicate elements');
+      }
+   }
+ 
+
