@@ -147,6 +147,11 @@ for (var i =0 ; i < accounts.length; i++) {
    getArraySum(accounts[i])   
 }
 console.log(accountSum)
+console.log(Math.max(...accountSum))
+
+// const arrSum = arr => arr.reduce((a,b) => a + b, 0);
+// console.log(arrSum(accounts[0]))
+
 
 
 
