@@ -102,33 +102,39 @@ var nums = [1,2,3,4]
 // }
 
 
-checkDuplicate();
-   function checkDuplicate(element, index) {
-      let arr = ["abc","xy","bb", "abc"];
-      for(let i = 0; i < arr.length;i++) {
-         // nested loop
-         for(let j = 0; j < arr.length;j++) {
-            // do not compare same elements
-            if(i !== j) {
-              // check if elements match
-        if(arr[i] === arr[j]){
-                 // duplicate element found
-           result = true;
-                 // terminate inner loop
-           break;
-        }
-            }
-         }
-         // terminate outer loop
-         if(result){
-            break;
-         }
-      }
-      if(result) {
-         console.log('Array contains duplicate elements');
-      } else {
-         console.log('Array does not contain duplicate elements');
-      }
-   }
+// checkDuplicate();
+//    function checkDuplicate(element, index) {
+//       let arr = ["abc","xy","bb", "abc"];
+//       for(let i = 0; i < arr.length;i++) {
+//          // nested loop
+//          for(let j = 0; j < arr.length;j++) {
+//             // do not compare same elements
+//             if(i !== j) {
+//               // check if elements match
+//         if(arr[i] === arr[j]){
+//                  // duplicate element found
+//            result = true;
+//                  // terminate inner loop
+//            break;
+//         }
+//             }
+//          }
+//          // terminate outer loop
+//          if(result){
+//             break;
+//          }
+//       }
+//       if(result) {
+//          console.log('Array contains duplicate elements');
+//       } else {
+//          console.log('Array does not contain duplicate elements');
+//       }
+//    }
  
 
+
+var accounts = [[1,2,3], [4,5,6]];
+
+for (var i = 0; i < accounts.length; i++) {
+   
+}
