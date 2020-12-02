@@ -134,7 +134,19 @@ var nums = [1,2,3,4]
 
 
 var accounts = [[1,2,3], [4,5,6]];
+var accountSum = [];
 
-for (var i = 0; i < accounts.length; i++) {
-   
+function getArraySum (x) {
+   var total = 0;
+   for (var i in x) {
+      total += x[i];
+   }
+   accountSum.push(total);
 }
+for (var i =0 ; i < accounts.length; i++) {
+   getArraySum(accounts[i])   
+}
+console.log(accountSum)
+
+
+
