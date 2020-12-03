@@ -133,25 +133,37 @@ var nums = [1,2,3,4]
  
 
 
-var accounts = [[1,2,3], [4,5,6]];
-var accountSum = [];
+// var accounts = [[1,2,3], [4,5,6]];
+// var accountSum = [];
 
-function getArraySum (x) {
-   var total = 0;
-   for (var i in x) {
-      total += x[i];
-   }
-   accountSum.push(total);
-}
-for (var i =0 ; i < accounts.length; i++) {
-   getArraySum(accounts[i])   
-}
-console.log(accountSum)
-console.log(Math.max(...accountSum))
+// function getArraySum (x) {
+//    var total = 0;
+//    for (var i in x) {
+//       total += x[i];
+//    }
+//    accountSum.push(total);
+// }
+// for (var i =0 ; i < accounts.length; i++) {
+//    getArraySum(accounts[i])   
+// }
+// console.log(accountSum)
+// console.log(Math.max(...accountSum))
 
 // const arrSum = arr => arr.reduce((a,b) => a + b, 0);
 // console.log(arrSum(accounts[0]))
 
-
+let defangIPaddr = function(address) {
+   let defAddr = '';
+   for (char of address) {
+       if (char === '.') {
+           defAddr += '[.]';
+       } else {
+           defAddr += char;
+       }
+   }
+   return defAddr;
+};
+console.log(defangIPaddr("1.1.1.1"))
+;
 
 
