@@ -152,19 +152,19 @@ var nums = [1,2,3,4]
 // const arrSum = arr => arr.reduce((a,b) => a + b, 0);
 // console.log(arrSum(accounts[0]))
 
-let defangIPaddr = function(address) {
-   let defAddr = '';
-   for (char of address) {
-       if (char === '.') {
-           defAddr += '[.]';
-       } else {
-           defAddr += char;
-       }
-   }
-   return defAddr;
-};
-console.log(defangIPaddr("1.1.1.1"))
-;
+// let defangIPaddr = function(address) {
+//    let defAddr = '';
+//    for (char of address) {
+//        if (char === '.') {
+//            defAddr += '[.]';
+//        } else {
+//            defAddr += char;
+//        }
+//    }
+//    return defAddr;
+// };
+// console.log(defangIPaddr("1.1.1.1"))
+// ;
 
 
 // Input: command = "G()(al)"
@@ -174,3 +174,24 @@ console.log(defangIPaddr("1.1.1.1"))
 // () -> o
 // (al) -> al
 // The final concatenated result is "Goal".
+public class Solution {
+    public string Interpret(string command) {
+        var sb = new StringBuilder();
+        for(int i=0;i<command.Length;){
+            if(command[i]=='G'){
+                sb.Append("G");
+                i++;
+            }
+            else if(command[i]=='(' && command[i+1]==')'){
+                sb.Append("o");
+                i+=2;
+            }
+            else if(command[i]=='(' && command[i+1]=='a' && command[i+2]=='l' && command[i+3]==')'){
+                sb.Append("al");
+                i+=4;
+            }
+        }
+        
+        return sb.ToString();
+    }
+}
